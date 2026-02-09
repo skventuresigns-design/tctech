@@ -19,9 +19,25 @@
             background-color: #003366; /* Deep professional blue */
             color: white;
             padding: 2rem 1rem;
-            text-align: center;
         }
 
+        .header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; /* Vertically centers the text and logo */
+    justify-content: center; /* Centers the whole group on the page */
+    gap: 20px; /* Space between the text and the logo */
+}
+        header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Keeps the text nice and big */
+}
+
+.header-logo {
+    max-height: 80px; /* Adjust this to make your logo look right next to the text */
+    width: auto;
+}
         .container {
             max-width: 1000px;
             margin: auto;
@@ -84,13 +100,14 @@
         /* Mobile Adjustments */
         @media (max-width: 600px) {
             .container { padding: 1rem; }
+            .header-content {flex-direction: column;  text-align: center;}
         }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="logo.png" alt="Traveling Computer Tech Logo" style="max-width: 300px; height: auto;">
+    <h1>Traveling Computer Tech - </h1><img src="logo.png" alt="Traveling Computer Tech Logo" style="max-width: 300px; height: auto;">
     <p>On-Site Computer & Web Services — We Come To You!</p>
 </header>
 
